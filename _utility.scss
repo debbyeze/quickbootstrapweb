@@ -1,0 +1,29 @@
+@keyframes toptext {
+    from {
+        top: 0px;
+    }
+    to {
+        top: 50px;
+    }
+  }
+  button{
+      border: none;
+  }
+  .bold{
+      font-weight: 700;
+  }
+  .special_head{
+      font-size:40px ;
+  }
+  .special_text{
+      font-size: 24px;
+  }
+  @keyframes ball {
+    from {
+        left: 0px;
+    }
+    to {
+        right: 25px;
+        
+    }
+  }

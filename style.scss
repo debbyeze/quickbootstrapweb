@@ -1,0 +1,113 @@
+@import './utility';
+@import './variable';
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+body{
+    font-family:'Rubik', sans-serif;
+    header{
+      .question_segment{
+          height: 7vh;
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+          .input-group{
+              height: 5vh;
+              max-width: 40vw;
+          }
+      }
+    
+    nav{
+        background-color:$blue;
+
+        .container{
+            .navbar-collapse{
+               ul{
+                   li{
+                       a{
+                           color: white !important;
+                       }
+                   }
+               }
+            }
+
+       
+       }   
+    }
+}
+
+    .showcase{
+        background-image: url("./img/solar-cell-farm-power-station-alternative-energy-from-sun.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 3%;
+        padding-bottom: 15%;
+        height: auto;
+        width: 100%;
+        .showcase_cover{
+            .text_container{
+                 min-width: 50%;
+                 color:white;
+                animation-name: toptext;
+                position: relative;
+                animation-duration: 3s;
+                top: 50px;
+                
+            
+                
+                
+            }
+
+        }
+    }
+    // savecost
+
+    .savecost{
+        width: 100%;
+        height: auto;
+        background-color:$grey;
+        .savecost_flex{
+            align-items: center;
+           .savecost_text{
+               min-width: 500px;
+
+               .play{
+                   margin-left: 250px;
+                   .play1{
+                       width: 50px;
+                       height: 50px;
+                       border-radius: 50%;
+                       animation-name: ball;
+                       animation-duration: 1s;
+                       position: relative;
+                       animation-iteration-count: infinite;
+                   }
+                   .play2{
+                    width: 100px;
+                    height: 70px;
+                    border-radius: 50%;
+                    animation-name: ball;
+                  animation-duration: 3s;
+                    position: relative;
+                    animation-iteration-count: infinite;
+                   }
+               }
+               
+            
+           }
+           .savecost_img{
+
+             img{
+                 width: 600px;
+                 height: 400px;
+             }
+           }
+       }
+    }
+    .product{
+        background-color:$white;
+        .product_header{
+
+        }
+    }
+
+}
