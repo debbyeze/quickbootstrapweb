@@ -82,11 +82,12 @@ body{
                        animation-iteration-count: infinite;
                    }
                    .play2{
-                    width: 100px;
+                    width: 80px;
                     height: 70px;
                     border-radius: 50%;
                     animation-name: ball;
                   animation-duration: 3s;
+                  background-color: $grey;
                     position: relative;
                     animation-iteration-count: infinite;
                    }
@@ -105,9 +106,18 @@ body{
     }
     .product{
         background-color:$white;
-        .product_header{
-
+        .card_flex{
+            .card{
+               margin-right: 20px;
+               margin-bottom: 0px;
+               
+               img{
+            
+                   height: 200px;
+               }
+            }
         }
+    
     }
 
 }

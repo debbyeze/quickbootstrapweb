@@ -134,13 +134,14 @@ body .savecost .savecost_flex .savecost_text .play .play1 {
 }
 
 body .savecost .savecost_flex .savecost_text .play .play2 {
-  width: 100px;
+  width: 80px;
   height: 70px;
   border-radius: 50%;
   -webkit-animation-name: ball;
           animation-name: ball;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
+  background-color: #f5f4f4;
   position: relative;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
@@ -153,5 +154,14 @@ body .savecost .savecost_flex .savecost_img img {
 
 body .product {
   background-color: #ffffff;
+}
+
+body .product .card_flex .card {
+  margin-right: 20px;
+  margin-bottom: 0px;
+}
+
+body .product .card_flex .card img {
+  height: 200px;
 }
 /*# sourceMappingURL=style.css.map */
