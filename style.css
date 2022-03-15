@@ -153,12 +153,16 @@ body .savecost .savecost_flex .savecost_img img {
 }
 
 body .product {
-  background-color: #ffffff;
+  background-color: #0a0033;
+}
+
+body .product .card_flex {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 body .product .card_flex .card {
-  margin-right: 20px;
-  margin-bottom: 0px;
+  margin: 10px;
 }
 
 body .product .card_flex .card img {
