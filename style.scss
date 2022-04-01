@@ -16,14 +16,15 @@ body{
       }
     
     nav{
-        background-color:$blue;
-
+        
+background-color: $blue;
         .container{
             .navbar-collapse{
                ul{
                    li{
                        a{
-                           color: white !important;
+                           color:white !important;
+                           font-weight: bold;
                        }
                    }
                }
@@ -38,19 +39,34 @@ body{
         background-image: url("./img/solar-cell-farm-power-station-alternative-energy-from-sun.jpg");
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
-        padding: 3%;
-        padding-bottom: 15%;
-        height: auto;
+        background-size:cover;
+        min-height: 80vh;
         width: 100%;
+        position: relative;
         .showcase_cover{
+            position: inherit;
+            .showcase_circle{
+                min-height: 80vh;
+                width: 400px;
+                // border-top-right-radius: 50%;
+                // border-bottom-right-radius: 50%;
+                -webkit-clip-path: polygon(100% 0, 86% 100%, 0 100%, 0 0);
+                clip-path: polygon(100% 0, 86% 100%, 0 100%, 0 0);
+                position: absolute;
+            }
             .text_container{
                  min-width: 50%;
+                 position: absolute;
                  color:white;
                 animation-name: toptext;
                 position: relative;
                 animation-duration: 3s;
-                top: 50px;
+                 animation-delay: 0s;
+                top: 70px;
+                button{
+                    background-color: $white;
+                    color: $blue;
+                }
                 
             
                 
@@ -64,11 +80,15 @@ body{
     .savecost{
         width: 100%;
         height: auto;
-        background-color:$grey;
+        background-color:$white;
         .savecost_flex{
             align-items: center;
            .savecost_text{
                min-width: 500px;
+               button{
+                   background-color:$blue;
+                   color: $white;
+               }
 
                .play{
                    margin-left: 250px;
@@ -87,7 +107,7 @@ body{
                     border-radius: 50%;
                     animation-name: ball;
                   animation-duration: 3s;
-                  background-color: $grey;
+                  background-color: $white;
                     position: relative;
                     animation-iteration-count: infinite;
                    }
@@ -105,15 +125,26 @@ body{
        }
     }
     .product{
-        background-color:$blue;
+        background-color:$white;
         .card_flex{
             justify-content: space-around;
+            
+            
             .card{
                margin: 10px;
+               width: 500px !important;
+               box-shadow: 5px 10px 10px silver;
                
                img{
             
                    height: 200px;
+               }
+               .card-body{
+                a{
+                    background-color: $white !important;
+                    color: $blue !important;
+                    border: 1px solid $blue;
+                }
                }
             }
         }

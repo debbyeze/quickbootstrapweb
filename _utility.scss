@@ -1,9 +1,11 @@
 @keyframes toptext {
     from {
         top: 0px;
+        padding-top: 0px;
+        margin-top: 0px;
     }
     to {
-        top: 50px;
+        top: 120px;
     }
   }
   button{
@@ -21,9 +23,12 @@
   @keyframes ball {
     from {
         left: 0px;
+        background-color: green;
+
     }
     to {
         right: 25px;
+        background-color: yellow;
         
     }
   }

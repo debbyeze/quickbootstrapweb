@@ -2,17 +2,21 @@
 @-webkit-keyframes toptext {
   from {
     top: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
   }
   to {
-    top: 50px;
+    top: 120px;
   }
 }
 @keyframes toptext {
   from {
     top: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
   }
   to {
-    top: 50px;
+    top: 120px;
   }
 }
 
@@ -35,18 +39,22 @@ button {
 @-webkit-keyframes ball {
   from {
     left: 0px;
+    background-color: green;
   }
   to {
     right: 25px;
+    background-color: yellow;
   }
 }
 
 @keyframes ball {
   from {
     left: 0px;
+    background-color: green;
   }
   to {
     right: 25px;
+    background-color: yellow;
   }
 }
 
@@ -71,11 +79,12 @@ body header .question_segment .input-group {
 }
 
 body header nav {
-  background-color: #0a0033;
+  background-color: #0b0b3b;
 }
 
 body header nav .container .navbar-collapse ul li a {
   color: white !important;
+  font-weight: bold;
 }
 
 body .showcase {
@@ -83,27 +92,46 @@ body .showcase {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 3%;
-  padding-bottom: 15%;
-  height: auto;
+  min-height: 80vh;
   width: 100%;
+  position: relative;
+}
+
+body .showcase .showcase_cover {
+  position: inherit;
+}
+
+body .showcase .showcase_cover .showcase_circle {
+  min-height: 80vh;
+  width: 400px;
+  -webkit-clip-path: polygon(100% 0, 86% 100%, 0 100%, 0 0);
+  clip-path: polygon(100% 0, 86% 100%, 0 100%, 0 0);
+  position: absolute;
 }
 
 body .showcase .showcase_cover .text_container {
   min-width: 50%;
+  position: absolute;
   color: white;
   -webkit-animation-name: toptext;
           animation-name: toptext;
   position: relative;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
-  top: 50px;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  top: 70px;
+}
+
+body .showcase .showcase_cover .text_container button {
+  background-color: #ffffff;
+  color: #0b0b3b;
 }
 
 body .savecost {
   width: 100%;
   height: auto;
-  background-color: #f5f4f4;
+  background-color: #ffffff;
 }
 
 body .savecost .savecost_flex {
@@ -114,6 +142,11 @@ body .savecost .savecost_flex {
 
 body .savecost .savecost_flex .savecost_text {
   min-width: 500px;
+}
+
+body .savecost .savecost_flex .savecost_text button {
+  background-color: #0b0b3b;
+  color: #ffffff;
 }
 
 body .savecost .savecost_flex .savecost_text .play {
@@ -141,7 +174,7 @@ body .savecost .savecost_flex .savecost_text .play .play2 {
           animation-name: ball;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
-  background-color: #f5f4f4;
+  background-color: #ffffff;
   position: relative;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
@@ -153,7 +186,7 @@ body .savecost .savecost_flex .savecost_img img {
 }
 
 body .product {
-  background-color: #0a0033;
+  background-color: #ffffff;
 }
 
 body .product .card_flex {
@@ -163,9 +196,18 @@ body .product .card_flex {
 
 body .product .card_flex .card {
   margin: 10px;
+  width: 500px !important;
+  -webkit-box-shadow: 5px 10px 10px silver;
+          box-shadow: 5px 10px 10px silver;
 }
 
 body .product .card_flex .card img {
   height: 200px;
+}
+
+body .product .card_flex .card .card-body a {
+  background-color: #ffffff !important;
+  color: #0b0b3b !important;
+  border: 1px solid #0b0b3b;
 }
 /*# sourceMappingURL=style.css.map */
