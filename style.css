@@ -22,6 +22,7 @@
 
 button {
   border: none;
+  border-radius: 20%;
 }
 
 .bold {
@@ -79,7 +80,7 @@ body header .question_segment .input-group {
 }
 
 body header nav {
-  background-color: #0b0b3b;
+  background-color: #090931;
 }
 
 body header nav .container .navbar-collapse ul li a {
@@ -110,7 +111,7 @@ body .showcase .showcase_cover .showcase_circle {
 }
 
 body .showcase .showcase_cover .text_container {
-  min-width: 50%;
+  min-width: 40%;
   position: absolute;
   color: white;
   -webkit-animation-name: toptext;
@@ -120,73 +121,66 @@ body .showcase .showcase_cover .text_container {
           animation-duration: 3s;
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
-  top: 70px;
+  top: 130px;
+}
+
+body .showcase .showcase_cover .text_container h1 {
+  font-weight: bold;
+  font-size: 45px;
 }
 
 body .showcase .showcase_cover .text_container button {
   background-color: #ffffff;
-  color: #0b0b3b;
+  color: #090931;
+  font-weight: bold;
 }
 
-body .savecost {
-  width: 100%;
-  height: auto;
+body .services {
   background-color: #ffffff;
 }
 
-body .savecost .savecost_flex {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+body .services h3 {
+  color: #090931;
+  font-weight: 500;
 }
 
-body .savecost .savecost_flex .savecost_text {
-  min-width: 500px;
+body .services .services_flex {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-body .savecost .savecost_flex .savecost_text button {
-  background-color: #0b0b3b;
-  color: #ffffff;
+body .services .services_flex .service_container {
+  width: 400px;
+  height: 300px;
+  margin-top: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-body .savecost .savecost_flex .savecost_text .play {
-  margin-left: 250px;
-}
-
-body .savecost .savecost_flex .savecost_text .play .play1 {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  -webkit-animation-name: ball;
-          animation-name: ball;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  position: relative;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
-body .savecost .savecost_flex .savecost_text .play .play2 {
-  width: 80px;
-  height: 70px;
-  border-radius: 50%;
-  -webkit-animation-name: ball;
-          animation-name: ball;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  background-color: #ffffff;
-  position: relative;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
-body .savecost .savecost_flex .savecost_img img {
-  width: 600px;
+body .services .services_flex .service_container :hover {
+  cursor: pointer;
   height: 400px;
 }
 
+body .services .services_flex .first {
+  background-image: url("./img/WhatsApp Image 2022-03-11 at 16.05.29 (1).jpeg");
+}
+
+body .services .services_flex .second {
+  background-image: url("./img/house.png");
+  margin-top: 2px;
+}
+
+body .services .services_flex .third {
+  background-image: url("./img/WhatsApp Image 2022-03-11 at 16.05.29 (3).jpeg");
+}
+
 body .product {
-  background-color: #ffffff;
+  background-color: #d7daf7;
 }
 
 body .product .card_flex {
@@ -207,7 +201,7 @@ body .product .card_flex .card img {
 
 body .product .card_flex .card .card-body a {
   background-color: #ffffff !important;
-  color: #0b0b3b !important;
-  border: 1px solid #0b0b3b;
+  color: #090931 !important;
+  border: 1px solid #090931;
 }
 /*# sourceMappingURL=style.css.map */
