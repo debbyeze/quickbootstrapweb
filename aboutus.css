@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+@-webkit-keyframes bgimg {
+  from {
+    background-image: url("./img/solar-cell-farm-power-station-alternative-energy-from-sun.jpg");
+  }
+  to {
+    background-image: url("./img/aboutus.jpg");
+  }
+}
+@keyframes bgimg {
+  from {
+    background-image: url("./img/solar-cell-farm-power-station-alternative-energy-from-sun.jpg");
+  }
+  to {
+    background-image: url("./img/aboutus.jpg");
+  }
+}
+
+@-webkit-keyframes toptext {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 120px;
+  }
+}
+
+@keyframes toptext {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 120px;
+  }
+}
+
+button {
+  border: none;
+  border-radius: 20%;
+}
+
+h2 {
+  color: #090931;
+  font-weight: 600;
+}
+
+.pfont {
+  font-size: larger;
+}
+
+@-webkit-keyframes buttonslide {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 35%;
+  }
+}
+
+@keyframes buttonslide {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 35%;
+  }
+}
+
+.aboutus {
+  position: relative;
+  min-height: 500px;
+}
+
+.aboutus button {
+  background-color: goldenrod;
+  color: white;
+  position: absolute;
+  margin-left: 30px;
+  top: 400px;
+}
+
+@media only screen and (max-width: 600px) {
+  .aboutus button {
+    top: 900px;
+  }
+}
+
+.aboutus .aboutus_container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  -webkit-box-shadow: 5px 10px 10px silver;
+          box-shadow: 5px 10px 10px silver;
+  width: 100%;
+  height: auto;
+}
+
+.aboutus .aboutus_container img {
+  max-width: 400px;
+  height: 380px;
+}
+/*# sourceMappingURL=aboutus.css.map */

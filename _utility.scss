@@ -1,8 +1,16 @@
+@import "./variable";
+@keyframes bgimg {
+    from{
+        background-image: url("./img/solar-cell-farm-power-station-alternative-energy-from-sun.jpg");
+    }
+    to{
+        background-image: url("./img/aboutus.jpg");
+    }
+}
 @keyframes toptext {
     from {
         top: 0px;
-        padding-top: 0px;
-        margin-top: 0px;
+
     }
     to {
         top: 120px;
@@ -12,24 +20,23 @@
       border: none;
       border-radius: 20%;
   }
-  .bold{
-      font-weight: 700;
-  }
-  .special_head{
-      font-size:40px ;
-  }
-  .special_text{
-      font-size: 24px;
-  }
-  @keyframes ball {
+  h2{
+    color: $blue;
+    font-weight: 600;
+}
+ .pfont{
+     font-size: larger;
+ }
+  @keyframes buttonslide {
     from {
-        left: 0px;
-        background-color: green;
+        left: 0%;
+        
 
     }
     to {
-        right: 25px;
-        background-color: yellow;
+        left: 35%;
+    
         
     }
   }
+  

@@ -16,15 +16,22 @@ body{
       }
     
     nav{
-        
+        overflow: hidden;
+        position: fixed;
+        top: 0;
 background-color: $blue;
         .container{
             .navbar-collapse{
                ul{
                    li{
                        a{
-                           color:white !important;
+                           color:$white !important;
                            font-weight: bold;
+                           &:hover{
+                               color: goldenrod !important;
+                              font-size: larger;
+                           }
+
                        }
                    }
                }
@@ -43,34 +50,41 @@ background-color: $blue;
         min-height: 80vh;
         width: 100%;
         position: relative;
+        animation-name: bgimg;
+        animation-duration: 10s;
+        animation-delay: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+        transition: 4s ease-out;
+        
         .showcase_cover{
             position: inherit;
-            .showcase_circle{
-                min-height: 80vh;
-                width: 400px;
-                // border-top-right-radius: 50%;
-                // border-bottom-right-radius: 50%;
-                -webkit-clip-path: polygon(100% 0, 86% 100%, 0 100%, 0 0);
-                clip-path: polygon(100% 0, 86% 100%, 0 100%, 0 0);
-                position: absolute;
-            }
+           
             .text_container{
-                 min-width: 40%;
+                 max-width: 500px;
                  position: absolute;
                  color:white;
+                 
                 animation-name: toptext;
                 position: relative;
-                animation-duration: 3s;
-                 animation-delay: 0s;
-                top: 130px;
+                animation-duration: 10s;
+                animation-delay: 3s;
+                 animation-iteration-count: infinite;
+                top: 120px;
+                align-items: center;
                 h1{
                     font-weight: bold;
                     font-size: 45px;
                 }
                 button{
-                    background-color: $white;
-                    color: $blue;
+                    background-color: goldenrod;
+                    color: $white;
                     font-weight: bold;
+                    &:hover{
+                        background-color: goldenrod;
+                        color: $white;
+                    }
                    
                 }
                 
@@ -84,25 +98,53 @@ background-color: $blue;
     // services
     .services{
         background-color: $white;
-        h3{
-            color: $blue;
-            font-weight: 500;
-        }
+        border-bottom: 2px solid $grey;
+        
         .services_flex{
             justify-content: center;
             justify-content: space-around;
             .service_container{
-               width: 400px;
-               height: 300px;
-               margin-top: 15px;
+               width: 350px;
+               height: 350px;
+               margin-top: 19px;
                background-position: center;
-        background-repeat: no-repeat;
-        background-size:cover;
-          :hover{
-              cursor: pointer;
-              height: 400px;
-          }
-
+               background-repeat: no-repeat;
+               background-size:cover;
+               position: relative;
+               justify-content: center;
+              filter: brightness(70%);
+                &:hover{
+                  cursor: pointer;
+                  width: 400px;
+                  filter: brightness(100%);
+                }
+              .service_animation{
+                  background-color: $blue;
+                  align-items: center;
+                  position: absolute;
+                  min-width: 200px;
+                  height: 100px;
+                  top: 35%;
+                  left: 10%;
+                  justify-content: center;
+                  border: 4px solid $white;
+                  border-radius: 10px;
+                  padding: 30px 10px;
+                  &:hover{
+                      background-color: transparent;
+                      font-size: larger;
+                      border-radius: 0%;
+                      
+                  }
+                  h5{
+                      text-align: center;
+                      color: $white;
+                      &:hover{
+                          font-size: larger;
+                      }
+                      
+                  }
+              }
               
             }
             .first{
@@ -111,7 +153,8 @@ background-color: $blue;
             }
             .second{
                 background-image: url("./img/house.png");
-                margin-top: 2px;
+                margin-top: 1px;
+                height: 290px;
             }
             .third{
                 background-image: url("./img/WhatsApp\ Image\ 2022-03-11\ at\ 16.05.29\ \(3\).jpeg");
@@ -121,7 +164,7 @@ background-color: $blue;
 
     
     .product{
-        background-color:$grey;
+        background-color:$white;
         .card_flex{
             justify-content: space-around;
             
@@ -129,17 +172,19 @@ background-color: $blue;
             .card{
                margin: 10px;
                width: 500px !important;
-               box-shadow: 5px 10px 10px silver;
+            //    box-shadow: 5px 10px 10px silver;
+               
                
                img{
             
                    height: 200px;
                }
                .card-body{
+                   text-align: center;
                 a{
-                    background-color: $white !important;
-                    color: $blue !important;
-                    border: 1px solid $blue;
+                    background-color: goldenrod !important;
+                    color: $white !important;
+                    border: 1px solid;
                 }
                }
             }
